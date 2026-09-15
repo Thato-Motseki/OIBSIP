@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northstar ATM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Northstar ATM home">
+        <span class="brand-mark">N</span>
+        <span>northstar<span class="brand-dot">.</span></span>
+      </a>
+      <div class="status"><span class="status-dot"></span>Secure session</div>
+    </header>
+
+    <section class="welcome" id="top">
+      <div>
+        <p class="eyebrow">Personal banking / 06</p>
+        <h1>Good evening,<br><em>Alex Morgan.</em></h1>
+        <p class="welcome-copy">Your money, clearly in view.</p>
+      </div>
+      <div class="date-stamp">Tuesday<br><strong>15 September 2026</strong></div>
+    </section>
+
+    <section class="dashboard-grid" aria-label="Account overview">
+      <article class="balance-panel">
+        <div class="panel-heading">
+          <span>Available balance</span>
+          <span class="account-type">Checking ·•• 1234</span>
+        </div>
+        <p class="balance">$2,840<span>.50</span></p>
+        <div class="balance-meta"><span>Updated just now</span><span class="up">↑ 4.8% this month</span></div>
+        <div class="balance-line"><span></span></div>
+        <div class="account-footer"><span>Account holder</span><strong>Alex Morgan</strong></div>
+      </article>
+
+      <aside class="actions-panel">
+        <div class="panel-heading"><span>Quick actions</span><span class="action-count">4 available</span></div>
+        <div class="action-grid">
+          <button class="action-button primary"><span class="action-icon">↓</span><span>Withdraw</span></button>
+          <button class="action-button"><span class="action-icon">↑</span><span>Deposit</span></button>
+          <button class="action-button"><span class="action-icon">↗</span><span>Transfer</span></button>
+          <button class="action-button"><span class="action-icon">≡</span><span>Statements</span></button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="lower-grid">
+      <article class="transactions-panel">
+        <div class="section-heading"><div><p class="eyebrow">Recent activity</p><h2>Transaction history</h2></div><a href="#history">View all <span>↗</span></a></div>
+        <div class="transaction-list" id="history">
+          <div class="transaction"><span class="transaction-icon green">↙</span><div class="transaction-info"><strong>Salary deposit</strong><span>Today · 09:42</span></div><strong class="amount positive">+$2,400.00</strong></div>
+          <div class="transaction"><span class="transaction-icon coral">↗</span><div class="transaction-info"><strong>Transfer to Jamie Lee</strong><span>Yesterday · 16:18</span></div><strong class="amount">−$75.00</strong></div>
+          <div class="transaction"><span class="transaction-icon amber">◉</span><div class="transaction-info"><strong>Green Market</strong><span>12 Sep · 11:06</span></div><strong class="amount">−$42.80</strong></div>
+          <div class="transaction"><span class="transaction-icon blue">↙</span><div class="transaction-info"><strong>Cash deposit</strong><span>10 Sep · 14:32</span></div><strong class="amount positive">+$300.00</strong></div>
+        </div>
+      </article>
+
+      <aside class="security-panel">
+        <div class="shield">✦</div>
+        <p class="eyebrow">Security check</p>
+        <h2>Everything looks good.</h2>
+        <p>Your account is protected with two-step verification and a private PIN.</p>
+        <button class="text-button">Manage security <span>→</span></button>
+      </aside>
+    </section>
+
+    <footer><span>Northstar Financial · Member FDIC</span><span>Need help? <strong>Contact support</strong></span></footer>
+  </main>
+</body>
+</html>
